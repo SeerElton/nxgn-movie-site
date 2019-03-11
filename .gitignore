@@ -1,0 +1,44 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/client/movies-site/dist
+/client/movies-site/dist-server
+/client/movies-site/tmp
+/client/movies-site/out-tsc
+
+# dependencies
+/client/movies-site/node_modules
+
+# IDEs and editors
+/client/movies-site/.idea
+/client/movies-site/.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+/client/movies-site/.vscode/*
+/client/movies-site/!.vscode/settings.json
+/client/movies-site/!.vscode/tasks.json
+/client/movies-site/!.vscode/launch.json
+/client/movies-site/!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db
