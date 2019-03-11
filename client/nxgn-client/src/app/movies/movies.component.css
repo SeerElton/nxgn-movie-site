@@ -1,0 +1,33 @@
+img{
+    width:100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(158, 150, 116, 0.6);
+}
+.movie-image:hover > .overlay {
+  opacity: 1;
+  cursor: pointer;  
+}
+.movie-image:hover .overlay {
+  opacity: 1;
+}
+.movie-overlay-text{
+  color: white;
+  text-align: center;
+}
+.movie-overlay-text p{
+  font-size: 12px;
+  line-height: 13px;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 5px;
+}

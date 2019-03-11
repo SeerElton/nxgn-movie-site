@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('../node_modules/bootstrap/dist/css/bootstrap.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.css');
+@import url('../node_modules/animate.css/animate.css');
+
+.center{
+    display: block;
+    margin: auto;
+}
+body{
+    background-color: rgb(238, 230, 215);
+    background-image: url('/assets/abstract-black-png.png');
+    
+}
+
+.card{
+    background-color: rgba(255, 253, 246, 0.95)
+}

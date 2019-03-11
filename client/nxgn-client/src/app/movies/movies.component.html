@@ -1,0 +1,37 @@
+<!-- content -->
+<div class="container">
+
+  <!-- hero title -->
+  <div class="row mt-4">
+    <div class="col-12 text-center">
+      <h2 class="mt-3 animated bounceIn">Best Movies Of All Times</h2>
+    </div>
+  </div>
+  <!-- end of hero title -->
+  <div class="row text-center mt-5">
+
+    <!-- loop througt movies -->
+    <div class="m-1 col-sm-10 col-md-3 col-lg-2 card animated slideInUp" *ngFor="let movie of movies">
+
+      <div class="card-body text-center movie-image">
+        <img src="http://localhost:5000/images/{{movie.image}}" alt="">
+        <div class=" overlay">
+          <div class="movie-overlay-text">
+            <h3 class="m-sm-5 m-md-2">{{movie.name}}</h3>
+            <p>{{movie.about}}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-footer row">
+        <span class="col-6" data-toggle="modal" [routerLink]="['edit-movie',movie]" (click)=editMovie(movie)
+          data-target="#editMovie"><i class="fas fa-edit"></i></span>
+        <span class="col-6 text-danger" (click)="delete(movie)"><i class="fas fa-trash-alt"></i></span>
+      </div>
+
+    </div>
+
+
+  </div>
+
+</div>
