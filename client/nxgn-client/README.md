@@ -16,6 +16,12 @@ sudo npm -g install angular@1.7
 ```
 ---------
 
+install all required dependancies using the code below:
+
+```
+npm install
+```
+
 after installing the cli can start the application using:
 ```
 ng serve --open
